@@ -1,0 +1,52 @@
+* {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: var(--logo-font);
+  font-size: 46px;
+  color: #000;
+}
+
+h1 {
+  font-family: var(--font-h1);
+  font-size: 113px;
+}
+
+h2 {
+  font-family: var(--font-h2);
+  font-size: 46px;
+}
+
+p {
+  font-family: var(--font-p);
+  font-size: 22px;
+}
+
+li {
+  font-family: var(--font-p);
+  font-size: 22px;
+}
+
+.navbtn {
+  position: relative;
+  text-align: center;
+}
+
+.navtxt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cta {
+  font-family: var(--nav-font);
+  font-size: 22px;
+  color: var(--color-);
+  background-color: var(--color-tertiary);
+  padding: 14px 28px;
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  gap: 10px;
+}

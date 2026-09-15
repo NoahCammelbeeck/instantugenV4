@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "inter";
+  src: url(../fonts/Inter_18pt-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "archivo_black";
+  src: url(../fonts/ArchivoBlack-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "archivo";
+  src: url(../fonts/Archivo_Condensed-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "inter_semibold";
+  src: url(../fonts/Inter_18pt-SemiBold.ttf) format("truetype");
+}
+
+/* fonts */
+:root {
+  --font-p: "inter";
+  --font-h1: "archivo_black";
+  --font-h2: "archivo_black";
+  --nav-font: "inter_semibold";
+  --logo-font: "archivo";
+}
+
+/* colors */
+:root {
+  --color-primary: #f8efe0;
+  --color-secondary: #ff7800;
+  --color-tertiary: #81d316;
+}
