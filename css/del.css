@@ -1,0 +1,12 @@
+.overskrift {
+  font-size: 50px;
+}
+
+.underoverskrift {
+  font-size: 30px;
+}
+
+.grid-1-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
