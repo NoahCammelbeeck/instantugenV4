@@ -1,12 +1,188 @@
+/******************* Mobil ****************/
+
+/******* Tekst bokse*******/
 .overskrift {
-  font-size: 50px;
+  font-size: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .underoverskrift {
-  font-size: 30px;
+  font-size: 25px;
+}
+
+.sektion1 {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+}
+
+.sektion1 h2 {
+  font-size: 20px;
+}
+
+/****** Generel ******/
+
+.textboks {
+  padding-right: 20px;
 }
 
 .grid-1-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  padding-right: 20px;
+}
+
+body p {
+  font-size: 18px;
+}
+
+/******* Form *******/
+.inputboks {
+  width: 90%;
+}
+
+.formContent {
+  margin-bottom: 30px;
+}
+
+.formContent p {
+  margin: 0;
+  font-size: 13px;
+}
+
+/** Upload img form**/
+.downloadImg {
+  max-width: 50px;
+}
+
+.inputboks_img {
+  transition: transform 0.15s ease;
+}
+
+.inputboks_img img:hover {
+  transform: scale(1.15);
+}
+
+.tilføjImgTekst {
+  line-height: 25px;
+}
+
+.formContentStor input {
+  min-height: 50px;
+}
+.formContentStor p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.checkmark-tekst {
+  font-family: var(--font-p);
+  font-size: 12px;
+}
+
+/** IMG**/
+.ImgContainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+.billedeSamling {
+  padding-right: 30px;
+}
+
+/** Tjek boks**/
+
+#terms {
+  z-index: 1000;
+  max-width: 500px;
+  max-height: 80vh;
+  overflow-y: auto;
+  border: none;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+#terms::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.terms h2 {
+  font-size: 25px;
+}
+
+.terms h3 {
+  font-size: 18px;
+}
+
+.terms p {
+  font-size: 13px;
+}
+
+.billedeSamling2 {
+  display: none;
+}
+
+/** Desktop **/
+@media (min-width: 880px) {
+  .sektion1 {
+    padding-bottom: 30px;
+    padding-top: 50px;
+  }
+
+  .formContentStor p {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .formContent p {
+    font-size: 18px;
+  }
+
+  .formContent {
+    margin-bottom: 40px;
+  }
+
+  .terms p {
+    font-size: 18px;
+  }
+
+  .grid-desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .billedeSamling2 {
+    display: block;
+    max-width: 50%;
+  }
+
+  .billedeSamling {
+    display: none;
+  }
+
+  .formContentStor input {
+    min-height: 100px;
+  }
+
+  .overskrift {
+    font-size: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .underoverskrift {
+    font-size: 30px;
+  }
+
+  .grid-1-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    padding-right: 100px;
+  }
+
+  .textboks {
+    max-width: 500px;
+  }
 }
