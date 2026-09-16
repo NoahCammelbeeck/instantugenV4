@@ -1,16 +1,94 @@
 * {
   text-decoration: none;
+  box-sizing: border-box;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  height: 100%;
+  max-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 0px;
+  padding: 0;
+  margin: 0px 0 0;
+}
+
+nav li {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbtn-img {
+  scale: 0.8;
+  padding: 0;
+  margin: 0;
+  gap: 0;
+}
+
+.rotate1 {
+  transform: rotate(-5deg);
+}
+
+.rotate2 {
+  transform: rotate(-2deg);
+}
+
+.rotate3 {
+  transform: rotate(2deg);
+}
+
+.logopadding {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 11vw 1fr;
+  min-height: 100vh;
+}
+
+main,
+footer {
+  width: 100%;
 }
 
 .logo {
   font-family: var(--logo-font);
   font-size: 46px;
   color: #000;
+  text-align: center;
 }
 
 h1 {
   font-family: var(--font-h1);
   font-size: 113px;
+  padding: 0;
+  margin: 0;
 }
 
 h2 {
@@ -28,6 +106,10 @@ p {
   font-size: 22px;
 }
 
+ul {
+  list-style-type: none;
+}
+
 li {
   font-family: var(--font-p);
   font-size: 22px;
@@ -35,7 +117,16 @@ li {
 
 .navbtn {
   position: relative;
-  text-align: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  gap: 0;
+}
+
+.navbtn img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .navtxt {
@@ -43,6 +134,12 @@ li {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  width: 90%;
+  margin: 0;
+  /*  font-size: 48px; */
+  font-size: clamp(10px, 1.5vw, 16px);
+  text-align: center;
 }
 
 .cta {
