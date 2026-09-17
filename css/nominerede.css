@@ -28,21 +28,6 @@ body {
    SIDEBAR
 ------------------------- */
 
-.sidebar {
-  position: fixed;
-  left: 20px;
-  top: 25px;
-  width: 520px; /* gør plads til større polaroider */
-}
-
-.polaroid {
-  width: 65px; /* var måske 65px før */
-  height: 100px;
-
-  background: white;
-  padding: 6px 6px 15px;
-}
-
 .logo {
   font-size: 13px;
   font-weight: bold;
@@ -54,101 +39,6 @@ body {
 
 .logo span {
   display: block;
-}
-
-/* -------------------------
-   NAVIGATION
-------------------------- */
-
-.sidebar nav {
-  display: flex;
-
-  flex-direction: column;
-
-  gap: 15px;
-}
-
-.polaroid {
-  display: block;
-
-  width: 65px;
-
-  background: white;
-
-  padding: 5px 5px 12px 5px;
-
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.18);
-
-  text-decoration: none;
-
-  color: #111;
-
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
-}
-
-.polaroid:hover {
-  transform: scale(1.08) rotate(0deg);
-
-  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
-}
-
-/* Små rotationer som på prototypen */
-
-.nav-vinder {
-  transform: rotate(-7deg);
-}
-
-.nav-vinder:hover {
-  transform: rotate(0deg) scale(1.08);
-}
-
-.nav-nominerede {
-  transform: rotate(5deg);
-}
-
-.nav-nominerede:hover {
-  transform: rotate(0deg) scale(1.08);
-}
-
-.nav-om {
-  transform: rotate(-4deg);
-}
-
-.nav-om:hover {
-  transform: rotate(0deg) scale(1.08);
-}
-
-.polaroid .photo {
-  height: 50px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background: #e7b900;
-
-  font-size: 6px;
-  font-weight: bold;
-
-  text-align: center;
-}
-
-.nav-nominerede .photo {
-  background: #f2ca28;
-}
-
-.nav-om .photo {
-  background: #e4b72c;
-}
-
-.polaroid p {
-  font-size: 7px;
-
-  margin-top: 5px;
-
-  text-align: center;
 }
 
 /* -------------------------
