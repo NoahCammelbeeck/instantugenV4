@@ -13,8 +13,6 @@ html {
 }
 
 body {
-  /*   font-family: Arial, Helvetica, sans-serif; */
-
   background:
     radial-gradient(circle at 20% 30%, #f6e6a8 0%, transparent 35%), radial-gradient(circle at 90% 80%, #dceff0 0%, transparent 35%), #f5ead9;
 
@@ -27,22 +25,22 @@ body {
    SIDEBAR
 ------------------------- */
 
-/* .sidebar {
+.sidebar {
   position: fixed;
   left: 20px;
   top: 25px;
   width: 520px; /* gør plads til større polaroider */
-/* } */
+}
 
-/* .polaroid {
+.polaroid {
   width: 65px; /* var måske 65px før */
-height: 100px;
+  height: 100px;
 
-background: white;
-padding: 6px 6px 15px;
-/* } */
+  background: white;
+  padding: 6px 6px 15px;
+}
 
-/* .logo {
+.logo {
   font-size: 13px;
   font-weight: bold;
 
@@ -53,8 +51,7 @@ padding: 6px 6px 15px;
 
 .logo span {
   display: block;
-} */
-*/
+}
 
 /* -------------------------
    NAVIGATION
@@ -95,6 +92,31 @@ padding: 6px 6px 15px;
 }
 
 /* Små rotationer som på prototypen */
+
+.nav-vinder {
+  transform: rotate(-7deg);
+}
+
+.nav-vinder:hover {
+  transform: rotate(0deg) scale(1.08);
+}
+
+.nav-nominerede {
+  transform: rotate(5deg);
+}
+
+.nav-nominerede:hover {
+  transform: rotate(0deg) scale(1.08);
+}
+
+.nav-om {
+  transform: rotate(-4deg);
+}
+
+.nav-om:hover {
+  transform: rotate(0deg) scale(1.08);
+}
+
 .polaroid .photo {
   height: 50px;
 
@@ -228,13 +250,13 @@ h1 {
   padding-bottom: 100px;
 }
 
-/* .nominees-section > h2 {
+.nominees-section > h2 {
   text-align: center;
 
   font-size: 18px;
 
   margin-bottom: 35px;
-} */
+}
 
 .nominees-grid {
   display: grid;
