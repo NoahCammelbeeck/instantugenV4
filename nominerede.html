@@ -3,69 +3,318 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="css/nominerede.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/variables.css" />
+
     <title>Vindere og nominerede</title>
   </head>
+
   <body>
-    <header>
-      <a href="index.html">logo</a>
-      <nav>
-        <ul>
-          <li><a href="">Inspiration</a></li>
-          <li><a href="info.html">Om os</a></li>
-          <li><a href="del.html">Del dine instants</a></li>
-          <li><a href="nominerede.html">Vindere og nominerede</a></li>
-        </ul>
+    <!-- =========================
+       NAVIGATION
+  ========================== -->
+
+    <header class="sidebar">
+      <!-- MOBIL HEADER -->
+      <div class="mobile-header">
+        <div class="logo">
+          <span>Instant</span>
+          <span>ugen</span>
+        </div>
+
+        <button class="burger" id="burger" aria-label="Åbn menu" type="button">
+          ☰
+        </button>
+      </div>
+
+      <!-- NAVIGATION -->
+      <nav id="nav-menu">
+        <!-- VINDER -->
+        <a href="#vinder" class="polaroid nav-vinder">
+          <div class="photo">
+            <span>VINDER</span>
+          </div>
+
+          <p>Vinder</p>
+        </a>
+
+        <!-- NOMINEREDE -->
+        <a href="#nominerede" class="polaroid nav-nominerede">
+          <div class="photo">
+            <span>De nominerede</span>
+          </div>
+
+          <p>Nominerede</p>
+        </a>
+
+        <!-- OM -->
+        <a href="#om" class="polaroid nav-om">
+          <div class="photo">
+            <span>Om</span>
+          </div>
+
+          <p>Om siden</p>
+        </a>
       </nav>
     </header>
+
+    <!-- =========================
+       HOVEDINDHOLD
+  ========================== -->
+
     <main>
-      <div>
-        <h1>Vindere og nominerede</h1>
-        <!-- infografik her -->
-        <div>
-          <h2>Vinderen!</h2>
-          <p>titel på instant</p>
-          <p>fotografens navn</p>
-          <p>beskrivelse af billede</p>
+      <!-- =========================
+         VINDER
+    ========================== -->
+
+      <section id="vinder" class="winner-section">
+        <div class="title-area">
+          <h1>Vinder &amp; nominerede</h1>
+
+          <h2>Vinderen af 2026</h2>
+
+          <h3>Amager Fælled</h3>
+
+          <p>Tinget af Steffen Grage</p>
+
+          <p>
+            Beskrivelse: Et lille snapshot fra Amager Fælled, en stor skov i den
+            sydvestlige del af København, Danmark. Taget med et Lomomatic
+            Square.
+          </p>
         </div>
-        <img src="" alt="" />
-      </div>
-      <section>
+
+        <div class="winner-image polaroid-large">
+          <img src="pics/amager-faelled.jpg" alt="Vinderen af 2026" />
+        </div>
+      </section>
+
+      <!-- =========================
+         NOMINEREDE
+    ========================== -->
+
+      <section id="nominerede" class="nominees-section">
         <h2>De nominerede</h2>
-        <div class="grid2">
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
+
+        <div class="nominees-grid">
+          <!-- NOMINERET 1 -->
+
+          <article class="nominee">
+            <div class="polaroid-card">
+              <img src="pics/Amager-Forbrænding.jpg" alt="Amager Forbrænding" />
+            </div>
+
+            <h3>Amager Forbrænding</h3>
+
+            <p class="author">Navn: Stefan Grage</p>
+
+            <p>
+              Beskrivelse/historien bag: Jeg ville give min højre arm for en
+              smøg. Taget med et Lomomatic Square.
+            </p>
+          </article>
+
+          <!-- NOMINERET 2 -->
+
+          <article class="nominee">
+            <div class="polaroid-card">
+              <img src="pics/amager-strand.jpg" alt="Amager Strand" />
+            </div>
+
+            <h3>Amager Strand</h3>
+
+            <p class="author">Navn: Stefan Grage</p>
+
+            <p>
+              Beskrivelse/historien bag: Fra denne vinkel ligner København en
+              storby. Taget med et Polaroid Now+ Gen 2, med et gult filter.
+            </p>
+          </article>
+
+          <!-- NOMINERET 3 -->
+
+          <article class="nominee">
+            <div class="polaroid-card">
+              <img
+                src="pics/burger-king.jpg"
+                alt="Hænderne væk fra mit happy meal"
+              />
+            </div>
+
+            <h3>Hænderne væk fra mit happy meal</h3>
+
+            <p class="author">Navn: Stefan Grage</p>
+
+            <p>
+              Beskrivelse/historien bag: Et tilfældigt billede fra Burger King.
+              Som det fremgår, ville den yngste ikke dele sit Happy Meal. Taget
+              med et Instax Mini.
+            </p>
+          </article>
+
+          <!-- NOMINERET 4 -->
+
+          <article class="nominee">
+            <div class="polaroid-card">
+              <img src="pics/dobbelt-exp-orestad.jpg" alt="2 x Ørestad" />
+            </div>
+
+            <h3>2 x Ørestad</h3>
+
+            <p class="author">Navn: Stefan Grage</p>
+
+            <p>
+              Beskrivelse/historien bag: En dobbelteksponering fra mit nabolag,
+              Ørestad. Taget med et Lomomatic Square.
+            </p>
+          </article>
+
+          <!-- NOMINERET 5 -->
+
+          <article class="nominee">
+            <div class="polaroid-card">
+              <img src="pics/loserup-strand-04.jpg" alt="Leserup Strand" />
+            </div>
+
+            <h3>Leserup Strand</h3>
+
+            <p class="author">Navn: Stefan Grage</p>
+
+            <p>
+              Beskrivelse/historien bag: For koldt til at tage en dukkert. Så
+              jeg tog et billede i stedet. Polaroidet gav et forfærdeligt
+              magenta farveskær, men jeg endte med at kunne lide det.
+            </p>
+          </article>
+
+          <!-- NOMINERET 6 -->
+
+          <article class="nominee">
+            <div class="polaroid-card">
+              <img
+                src="pics/orestad-sort-hvid.jpg"
+                alt="Noget nyt og noget gammelt"
+              />
+            </div>
+
+            <h3>Noget nyt og noget gammelt</h3>
+
+            <p class="author">Navn: Stefan Grage</p>
+
+            <p>
+              Beskrivelse/historien bag: Jeg ville fange den nye bydel, Ørestad,
+              i en bedste retro-stil. Så jeg brugte et Polaroid Now+ gen 2 på et
+              stativ med en i-Type sort-hvid film.
+            </p>
+          </article>
+
+          <!-- NOMINERET 7 -->
+
+          <article class="nominee">
+            <div class="polaroid-card">
+              <img src="pics/karlstrup-kalkgrav.jpg" alt="Karstrup & kaffe" />
+            </div>
+
+            <h3>Karstrup &amp; kaffe</h3>
+
+            <p class="author">Navn: Stefan Grage</p>
+
+            <p>
+              Beskrivelse/historien bag: Den smukke natur i en tidligere
+              kalkgrav med et twist af kaffe. Polaroidet blev lagt i blød i
+              kaffe i et par uger.
+            </p>
+          </article>
+
+          <!-- NOMINERET 8 -->
+
+          <article class="nominee">
+            <div class="polaroid-card">
+              <img
+                src="pics/amager-strand-nat.jpg"
+                alt="Amager Strand om natten"
+              />
+            </div>
+
+            <h3>Amager Strand om natten</h3>
+
+            <p class="author">Navn: Stefan Grage</p>
+
+            <p>
+              Beskrivelse/historien bag: Amager Strand, København. Lokalt omtalt
+              som Københavns mini-Manhattan. Lang eksponering med Polaroid Now+
+              gen 2.
+            </p>
+          </article>
+
+          <!-- NOMINERET 9 -->
+
+          <article class="nominee">
+            <div class="polaroid-card">
+              <img src="pics/amager-strand-vandbad.jpg" alt="Stranden" />
+            </div>
+
+            <h3>Stranden</h3>
+
+            <p class="author">Navn: Stefan Grage</p>
+
+            <p>
+              Beskrivelse/historien bag: Amager Strand ligger tæt på havet. Så
+              jeg ville give dette polaroidkamera et twist af vand.
+              Polaroidkameraet blev lagt i blød i vand i omkring tre uger.
+            </p>
+          </article>
         </div>
       </section>
     </main>
-    <footer>
-      <div>
-        <h3>Kontakt os</h3>
-        <p>E-mail: lillebittemail@gmail.com</p>
-        <!-- logo -->
+
+    <!-- =========================
+       FOOTER
+  ========================== -->
+
+    <footer class="footer">
+      <div class="footer-left">
+        <h2>
+          INSTANT<br />
+          UGEN
+        </h2>
+
+        <h3>70’s heart, future’s mind.</h3>
+
+        <p>Et samarbejde med EK</p>
       </div>
-      <div>
-        <a href="del.html">Del dine instants</a>
-        <a href="info.html">Om os</a>
-        <a href="nominerede.html">Vindere og nominerede</a>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-contact">
+        <h2>Kontakt os</h2>
+
+        <p>E-mail: enrandommail@gmail.com</p>
+
+        <p>Den 10. - 18. Oktober 2026</p>
+      </div>
+
+      <div class="footer-polaroid">
+        <div class="footer-picture">
+          <img src="pics/amager-faelled.jpg" alt="Instant Ugen" />
+        </div>
       </div>
     </footer>
-  </body>
+
+    <!-- =========================
+       BURGER MENU JAVASCRIPT
+  ========================== -->
+
+    <script>
+  const burger = document.getElementById("burger");
+  const navMenu = document.getElementById("nav-menu");
+
+  burger.addEventListener("click", function () {
+    navMenu.classList.toggle("open");
+  });
+</script>
 </html>
+```

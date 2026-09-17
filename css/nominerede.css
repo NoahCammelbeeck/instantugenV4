@@ -1,0 +1,706 @@
+/* -------------------------
+   GENERELT
+------------------------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+  background:
+    radial-gradient(circle at 20% 30%, #f6e6a8 0%, transparent 35%),
+    radial-gradient(circle at 90% 80%, #dceff0 0%, transparent 35%), #f5ead9;
+
+  color: #111;
+
+  min-height: 100vh;
+}
+
+/* -------------------------
+   SIDEBAR
+------------------------- */
+
+.sidebar {
+  position: fixed;
+  left: 20px;
+  top: 25px;
+  width: 520px; /* gør plads til større polaroider */
+}
+
+.polaroid {
+  width: 65px; /* var måske 65px før */
+  height: 100px;
+
+  background: white;
+  padding: 6px 6px 15px;
+}
+
+.logo {
+  font-size: 13px;
+  font-weight: bold;
+
+  line-height: 1;
+
+  margin-bottom: 20px;
+}
+
+.logo span {
+  display: block;
+}
+
+/* -------------------------
+   NAVIGATION
+------------------------- */
+
+.sidebar nav {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.polaroid {
+  display: block;
+
+  width: 65px;
+
+  background: white;
+
+  padding: 5px 5px 12px 5px;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.18);
+
+  text-decoration: none;
+
+  color: #111;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.polaroid:hover {
+  transform: scale(1.08) rotate(0deg);
+
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Små rotationer som på prototypen */
+
+.nav-vinder {
+  transform: rotate(-7deg);
+}
+
+.nav-vinder:hover {
+  transform: rotate(0deg) scale(1.08);
+}
+
+.nav-nominerede {
+  transform: rotate(5deg);
+}
+
+.nav-nominerede:hover {
+  transform: rotate(0deg) scale(1.08);
+}
+
+.nav-om {
+  transform: rotate(-4deg);
+}
+
+.nav-om:hover {
+  transform: rotate(0deg) scale(1.08);
+}
+
+.polaroid .photo {
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #e7b900;
+
+  font-size: 6px;
+  font-weight: bold;
+
+  text-align: center;
+}
+
+.nav-nominerede .photo {
+  background: #f2ca28;
+}
+
+.nav-om .photo {
+  background: #e4b72c;
+}
+
+.polaroid p {
+  font-size: 7px;
+
+  margin-top: 5px;
+
+  text-align: center;
+}
+
+/* -------------------------
+   MAIN
+------------------------- */
+
+main {
+  width: calc(100% - 130px);
+
+  margin-left: 120px;
+
+  max-width: 1050px;
+
+  padding: 45px 50px 100px;
+}
+
+/* -------------------------
+   VINDER
+------------------------- */
+
+.winner-section {
+  min-height: 500px;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 50px;
+
+  padding-top: 5px;
+}
+.winner-image {
+  margin-top: 450px;
+}
+.title-area {
+  max-width: 450px;
+}
+
+h1 {
+  font-family: Georgia, serif;
+
+  font-size: clamp(35px, 5vw, 62px);
+
+  margin-bottom: 55px;
+}
+
+.title-area h2 {
+  font-size: 18px;
+
+  margin-bottom: 20px;
+}
+
+.title-area h3 {
+  font-size: 13px;
+
+  margin-bottom: 8px;
+}
+
+.title-area p {
+  font-size: 11px;
+
+  line-height: 1.5;
+
+  margin-bottom: 8px;
+}
+
+/* -------------------------
+   VINDER BILLEDE
+------------------------- */
+
+.polaroid-large {
+  background: white;
+
+  padding: 10px 10px 35px;
+
+  width: 260px;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+
+  transform: rotate(1deg);
+}
+
+.polaroid-large img {
+  display: block;
+
+  width: 100%;
+
+  aspect-ratio: 1 / 1;
+
+  object-fit: cover;
+}
+
+/* -------------------------
+   NOMINEREDE
+------------------------- */
+
+.nominees-section {
+  padding-top: 20px;
+
+  padding-bottom: 100px;
+}
+
+.nominees-section > h2 {
+  text-align: center;
+
+  font-size: 18px;
+
+  margin-bottom: 35px;
+}
+
+.nominees-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 260px);
+
+  justify-content: center;
+
+  column-gap: 70px;
+
+  row-gap: 65px;
+}
+
+.nominee {
+  width: 260px;
+}
+
+.polaroid-card {
+  background: white;
+
+  padding: 8px 8px 25px;
+
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.16);
+
+  margin-bottom: 8px;
+}
+
+.polaroid-card img {
+  display: block;
+
+  width: 100%;
+
+  aspect-ratio: 1 / 1;
+
+  object-fit: cover;
+}
+
+.nominee h3 {
+  font-size: 10px;
+
+  margin-bottom: 8px;
+}
+
+.nominee p {
+  font-size: 8px;
+
+  line-height: 1.35;
+
+  margin-bottom: 5px;
+}
+
+.nominee .author {
+  font-weight: bold;
+}
+
+/* -------------------------
+   OM
+------------------------- */
+
+.about-section {
+  min-height: 400px;
+
+  padding-top: 50px;
+
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 25px;
+
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  max-width: 500px;
+
+  margin: auto;
+
+  line-height: 1.6;
+}
+
+/* -------------------------
+   RESPONSIVE
+------------------------- */
+
+@media (max-width: 750px) {
+  .sidebar {
+    position: fixed;
+
+    left: 10px;
+    top: 15px;
+
+    width: 55px;
+  }
+
+  .logo {
+    font-size: 9px;
+  }
+
+  .polaroid {
+    width: 48px;
+  }
+
+  .polaroid .photo {
+    height: 40px;
+  }
+
+  main {
+    width: calc(100% - 70px);
+
+    margin-left: 70px;
+
+    padding: 30px 20px 80px;
+  }
+
+  .winner-section {
+    flex-direction: column;
+
+    min-height: auto;
+
+    gap: 35px;
+  }
+
+  h1 {
+    font-size: 38px;
+
+    margin-bottom: 40px;
+  }
+
+  .polaroid-large {
+    width: 220px;
+
+    align-self: center;
+  }
+
+  .nominees-grid {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+  .nominee {
+    width: 240px;
+
+    margin: auto;
+  }
+}
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  width: 100%;
+
+  min-height: 150px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 25px;
+
+  padding: 35px 20px;
+
+  margin-top: 20px;
+
+  position: relative;
+}
+
+/* Venstre side */
+
+.footer-left {
+  width: 190px;
+}
+
+.footer-left h2 {
+  font-size: 20px;
+
+  line-height: 0.8;
+
+  font-weight: 900;
+
+  margin-bottom: 15px;
+}
+
+.footer-left h3 {
+  font-size: 11px;
+
+  margin-bottom: 12px;
+}
+
+.footer-left p {
+  font-size: 10px;
+}
+
+/* Lodret streg */
+
+.footer-divider {
+  width: 2px;
+
+  height: 85px;
+
+  background: #777;
+}
+
+/* Kontakt */
+
+.footer-contact {
+  width: 180px;
+}
+
+.footer-contact h2 {
+  font-family: Georgia, serif;
+
+  font-size: 17px;
+
+  font-weight: normal;
+
+  margin-bottom: 5px;
+}
+
+.footer-contact p {
+  font-size: 8px;
+
+  line-height: 1.5;
+
+  margin-bottom: 8px;
+}
+
+/* Lille polaroid */
+
+.footer-polaroid {
+  width: 70px;
+
+  transform: rotate(7deg);
+}
+
+.footer-picture {
+  background: white;
+
+  padding: 5px 5px 12px;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer-picture img {
+  display: block;
+
+  width: 60px;
+
+  height: 60px;
+
+  object-fit: cover;
+}
+
+@media (max-width: 750px) {
+  /* -------------------------
+     BURGER MENU
+  ------------------------- */
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 60px;
+
+    padding: 10px 20px;
+
+    background: #f5ead9;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    z-index: 1000;
+  }
+
+  .burger {
+    display: block;
+
+    border: none;
+    background: none;
+
+    font-size: 28px;
+    line-height: 1;
+
+    cursor: pointer;
+
+    color: #111;
+  }
+
+  .logo {
+    font-size: 11px;
+    line-height: 1;
+
+    margin: 0;
+    order: 2;
+  }
+
+  .sidebar nav {
+    display: none;
+  }
+
+  /* -------------------------
+     MAIN
+  ------------------------- */
+
+  main {
+    width: 100%;
+    margin-left: 0;
+
+    padding: 100px 20px 60px;
+  }
+
+  /* -------------------------
+     VINDER
+  ------------------------- */
+
+  .winner-section {
+    display: flex;
+    flex-direction: column;
+
+    min-height: auto;
+
+    gap: 30px;
+    padding-top: 0;
+  }
+
+  .title-area {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 38px;
+    line-height: 1;
+
+    margin-bottom: 40px;
+  }
+
+  .title-area h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .title-area h3 {
+    font-size: 14px;
+  }
+
+  .title-area p {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
+  .winner-image {
+    margin-top: 0;
+    align-self: center;
+  }
+
+  .polaroid-large {
+    width: min(100%, 300px);
+  }
+
+  /* -------------------------
+     NOMINEREDE
+  ------------------------- */
+
+  .nominees-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .nominees-section > h2 {
+    font-size: 20px;
+    margin-bottom: 35px;
+  }
+
+  .nominees-grid {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 50px;
+  }
+
+  .nominee {
+    width: 100%;
+    max-width: 300px;
+    margin: 0;
+  }
+
+  .polaroid-card {
+    width: 100%;
+  }
+
+  .nominee h3 {
+    font-size: 12px;
+  }
+
+  .nominee p {
+    font-size: 9px;
+    line-height: 1.45;
+  }
+
+  /* -------------------------
+     FOOTER
+  ------------------------- */
+
+  .footer {
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 25px;
+
+    padding: 40px 20px;
+  }
+
+  .footer-left,
+  .footer-contact {
+    width: 100%;
+  }
+
+  .footer-divider {
+    width: 80px;
+    height: 2px;
+  }
+}
+@media (max-width: 750px) {
+  .sidebar nav {
+    display: none;
+  }
+
+  .sidebar nav.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
