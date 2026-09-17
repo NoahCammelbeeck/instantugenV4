@@ -2,3 +2,24 @@
   font-family: var(--font-h1);
   font-size: 33px;
 }
+
+.grid2 p {
+  max-width: 520px;
+}
+
+ol {
+  max-width: 800px;
+}
+
+ol li {
+  margin-bottom: 10px;
+}
+
+.gaptop {
+  display: block;
+  width: 18%;
+}
+
+section {
+  margin-bottom: 50px;
+}
