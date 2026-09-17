@@ -25,22 +25,17 @@ body {
    SIDEBAR
 ------------------------- */
 
-.sidebar {
+/* .sidebar {
   position: fixed;
   left: 20px;
   top: 25px;
   width: 520px; /* gør plads til større polaroider */
-}
+/* }
 
 .polaroid {
   width: 65px; /* var måske 65px før */
-  height: 100px;
 
-  background: white;
-  padding: 6px 6px 15px;
-}
-
-.logo {
+/* .logo {
   font-size: 13px;
   font-weight: bold;
 
@@ -51,21 +46,21 @@ body {
 
 .logo span {
   display: block;
-}
+} */
 
 /* -------------------------
    NAVIGATION
 ------------------------- */
 
-.sidebar nav {
+/* .sidebar nav {
   display: flex;
 
   flex-direction: column;
 
   gap: 15px;
-}
+} */
 
-.polaroid {
+/* .polaroid {
   display: block;
 
   width: 65px;
@@ -89,11 +84,11 @@ body {
   transform: scale(1.08) rotate(0deg);
 
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
-}
+} */
 
 /* Små rotationer som på prototypen */
 
-.nav-vinder {
+/* .nav-vinder {
   transform: rotate(-7deg);
 }
 
@@ -147,7 +142,7 @@ body {
 
   text-align: center;
 }
-
+ */
 /* -------------------------
    MAIN
 ------------------------- */
