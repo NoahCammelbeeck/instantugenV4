@@ -95,6 +95,10 @@ h1 {
   margin: 0;
 }
 
+.h1topmargin {
+  margin-top: 35px;
+}
+
 h2 {
   font-family: var(--font-h2);
   font-size: 46px;
@@ -311,5 +315,6 @@ footer {
 }
 
 footer {
+  margin-top: 100px;
   grid-column: 2;
 }
