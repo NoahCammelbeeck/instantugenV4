@@ -72,6 +72,9 @@ nav li {
 .logopadding {
   padding: 0;
   margin: 0;
+  font-family: var(--logo-font);
+  rotate: 9deg;
+  font-size: 22px;
 }
 
 body {

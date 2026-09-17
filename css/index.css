@@ -1,6 +1,12 @@
 .date {
   font-family: var(--font-h1);
-  font-size: 33px;
+  font-size: 150%;
+  border-bottom: 2px solid #000;
+}
+
+.h1tagline {
+  font-family: var(--font-h1);
+  font-size: 150%;
 }
 
 .grid2 p {
