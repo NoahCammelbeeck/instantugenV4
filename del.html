@@ -1,231 +1,205 @@
 <!doctype html>
 <html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/del.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <title>Del</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/del.css" />
-  <link rel="stylesheet" href="css/layout.css" />
-  <link rel="stylesheet" href="css/general.css" />
-  <link rel="stylesheet" href="css/variables.css" />
-  <title>Del</title>
-</head>
-
-<body>
-  <header>
-    <div class="header-desktop">
-      <a class="logo" href="index.html">
-        <p class="logopadding">Instant</p>
-        <p class="logopadding">ugen</p>
-      </a>
-      <nav>
-        <ul>
-          <li><a href="info.html">
-              <div class="navbtn rotate1">
-                <img class="navbtn-img" src="pics/navbtn.jpg" alt="et polaroid med tekst">
-                <p class="navtxt rotate3">Om os</p>
-              </div>
-            </a></li>
-          <li><a href="del.html">
-              <div class="navbtn rotate2">
-                <img class="navbtn-img" src="pics/navbtn.jpg" alt="et polaroid med tekst">
-                <p class="navtxt rotate1">Del dine instants</p>
-              </div>
-            </a></li>
-          <li><a href="nominerede.html">
-              <div class="navbtn rotate3">
-                <img class="navbtn-img" src="pics/navbtn.jpg" alt="et polaroid med tekst">
-                <p class="navtxt rotate2">Deltagere</p>
-              </div>
-            </a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <h1 class="overskrift">Del dine instants</h1>
-    <section>
-      <h2 class="underoverskrift">Instant foto</h2>
-      <div class="grid-1-2">
-        <p class="textboks">Hver indsendelse skal være et analogt instant-foto - ikke en digital montage lavet i et
-          fotoredigeringsprogram.
-          Instant-fotoet kan laves på forskellige måder; med analoge instant-kameraer, digitale instant-kameraer som
-          f.eks.
-          Fujifilm EVO eller scan-og-print-udstyr som f.eks.
-          Polaroid Lab. Instant-fotoet må gerne manipuleres med analoge processer - arrangørerne opfordrer til at
-          eksperimentere
-          med instant fotografering.</p>
-
-        <p class="textboks">Indsendelsen kan skildre instant-fotoet på mange måder: Som en flad scanning med eller uden
-          instant-rammen,
-          som
-          et foto,
-          der viser instantet i en ramme, på væggen osv. Instant-fotoet behøver ikke kun at være ét foto: Det kan være
-          et
-          panorama
-          eller en collage af flere instants, der udgør én indsendelse. Så der er en vis kunstnerisk frihed;-)</p>
+  <body>
+    <header>
+      <div class="header-desktop">
+        <a class="logo" href="index.html">
+          <p class="logopadding">Instant</p>
+          <p class="logopadding">ugen</p>
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="info.html">
+                <div class="navbtn rotate1">
+                  <img class="navbtn-img" src="pics/navbtn.jpg" alt="et polaroid med tekst" />
+                  <p class="navtxt rotate3">Om os</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="del.html">
+                <div class="navbtn rotate2">
+                  <img class="navbtn-img" src="pics/navbtn.jpg" alt="et polaroid med tekst" />
+                  <p class="navtxt rotate1">Del dine instants</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="nominerede.html">
+                <div class="navbtn rotate3">
+                  <img class="navbtn-img" src="pics/navbtn.jpg" alt="et polaroid med tekst" />
+                  <p class="navtxt rotate2">Deltagere</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </section>
+    </header>
 
-
-    <section>
-      <div class="grid-desktop">
-        <div>
-
-
-          <div class="sektion1">
-            <h2>Regler for deltagelse</h2>
-            <p class="textboks">
-              Konkurrencen er åben for alle fotografer, både amatører og professionelle, der er over 18 år.
-            </p>
-          </div>
-
-          <form>
-            <div class="formContent">
-              <p>Navn</p>
-              <input class="inputboks" type="text" />
-            </div>
-
-            <div class="formContent">
-              <p>E-mail</p>
-              <input class="inputboks" type="email" />
-            </div>
-
-            <div class="formContent">
-              <p class="tilføjImgTekst">Tilføj billede</p>
-              <label class="inputboks_img">
-                <img class="downloadImg" src="/pics/Download.png" alt="Tilføj billede" />
-                <input type="file" hidden />
-              </label>
-            </div>
-
-
-            <div class="formContent">
-              <p>Titel på instant</p>
-              <input class="inputboks" type="text" />
-            </div>
-
-            <div class="formContentStor">
-              <p>Historien bag dit instant - beskriv billedet og hvordan du tog det i en sætning eller to</p>
-              <input class="inputboks" type="text" />
-            </div>
-
-          </form>
-
-          <div class="termsContent">
-            <button popovertarget="terms">Læs vilkår og betingelser</button>
-            <label class="checkbox">
-              <input type="checkbox" />
-              <span class="checkmark-tekst">Jeg accepterer betingelserne</span>
-            </label>
-          </div>
-
-          <a href="tak.html">
-            <div><button class="ctaSend">Send</button></div>
-          </a>
-
-
-        </div>
-
-        <div><img class="billedeSamling2" src="/pics/billederDesktopDel.png" alt="Billeder i siden"></div>
-
-      </div>
-      <section popover id="terms" class="terms">
-        <h2>Vilkår og betingelser</h2>
-        <p>Ved at deltage i konkurrencen accepterer du følgende vilkår og betingelser</p>
-
-        <div>
-          <h3>Samtykke</h3>
-          <p>
-            Det er ikke tilladt at uploade fotografier af personer, der ikke har givet samtykke til offentliggørelsen
-            af ​​billedet. Billeder af
-            personer i private eller pinlige situationer, uanset om de er fotograferet på et offentligt sted, er ikke
-            tilladt.
+    <main>
+      <h1 class="overskrift">Del dine instants</h1>
+      <section>
+        <h2 class="underoverskrift">Instant foto</h2>
+        <div class="grid-1-2">
+          <p class="textboks">
+            Hver indsendelse skal være et analogt instant-foto - ikke en digital montage lavet i et fotoredigeringsprogram. Instant-fotoet kan laves
+            på forskellige måder; med analoge instant-kameraer, digitale instant-kameraer som f.eks. Fujifilm EVO eller scan-og-print-udstyr som
+            f.eks. Polaroid Lab. Instant-fotoet må gerne manipuleres med analoge processer - arrangørerne opfordrer til at eksperimentere med instant
+            fotografering.
           </p>
-        </div>
-        <div>
-          <h3>Juridiske aspekter</h3>
-          <p>
-            Arrangørerne forbeholder sig retten til at diskvalificere enhver deltager, der overtræder disse
-            betingelser. Arrangørerne påtager sig
-            intet ansvar for tab, skade eller personskade, der måtte opstå som følge af deltagelse i konkurrencen
-            eller brug af præmier.
-            Deltagerne fritager arrangørerne for ethvert krav, søgsmål eller ansvar i forbindelse med deres deltagelse
-            i konkurrencen.
+
+          <p class="textboks">
+            Indsendelsen kan skildre instant-fotoet på mange måder: Som en flad scanning med eller uden instant-rammen, som et foto, der viser
+            instantet i en ramme, på væggen osv. Instant-fotoet behøver ikke kun at være ét foto: Det kan være et panorama eller en collage af flere
+            instants, der udgør én indsendelse. Så der er en vis kunstnerisk frihed;-)
           </p>
-        </div>
-        <div>
-          <h3>Antal bidrag</h3>
-          <p>Du kan deltage i konkurrencen med i alt fem bidrag.</p>
-        </div>
-        <div>
-          <h3>Brugsrettigheder</h3>
-          <p>
-            Ved at indsende et eller flere billeder og dermed deltage i konkurrencen accepterer du, at billedet må
-            bruges til promovering af
-            fotokonkurrencen og muligvis i fysiske udstillingslokaler bagefter. Arrangørerne vil kreditere deltagerne,
-            hvor det er praktisk og
-            rimeligt muligt.
-          </p>
-        </div>
-        <div>
-          <h3>Ophavsret</h3>
-          <p>
-            Du skal være fotografen af de indsendte instant fotos samt have rettighederne til at offentliggøre dem.
-            Billederne skal være fri for
-            tredjepartsrettigheder. Som deltager beholder du ophavsretten til de indsendte fotos. Ved at indsende
-            fotos til konkurrencen giver du
-            arrangørerne en ikke-eksklusiv licens til at bruge, reproducere og offentliggøre de indsendte fotos i
-            forbindelse med promoveringen af
-            ​​konkurrencen, herunder på sociale medieplatforme, hjemmesider og i trykte materialer. Arrangørerne vil
-            kreditere deltagerne, hvor
-            det er praktisk og rimeligt.
-          </p>
-        </div>
-        <div>
-          <h3>Annoncering af vinderne</h3>
-          <p>
-            Vinderne af konkurrencen vil blive annonceret på Instant Ugens officielle hjemmeside og/eller sociale
-            medieplatforme. Ved at deltage i
-            konkurrencen giver du samtykke til offentliggørelse af navn samt at indsendte fotos bruges til
-            markedsføring af konkurrencen.
-          </p>
-        </div>
-        <div>
-          <button popovertarget="terms" popovertargetaction="hide">Forstået og luk</button>
         </div>
       </section>
 
-      <div class="ImgContainer">
-        <img class="billedeSamling" src="/pics/billedeSamlingForm.png" alt="Billede samling" />
-      </div>
+      <section>
+        <div class="grid-desktop">
+          <div>
+            <div class="sektion1">
+              <h2>Regler for deltagelse</h2>
+              <p class="textboks">Konkurrencen er åben for alle fotografer, både amatører og professionelle, der er over 18 år.</p>
+            </div>
 
+            <form>
+              <div class="formContent">
+                <p>Navn</p>
+                <input class="inputboks" type="text" />
+              </div>
 
-    </section>
-  </main>
-  <footer>
-    <section class="footerContent">
-      <div class="footerSek1">
-        <img class="LogoFooter" src="/pics/INSTANTUGEN.png" alt="logo">
-        <p class="tagline">En uge fyldt med minder</p>
-        <h2 class="underoverskrift">Et samarbejde med EK</h2>
-      </div>
+              <div class="formContent">
+                <p>E-mail</p>
+                <input class="inputboks" type="email" />
+              </div>
 
-      <div class="addBorder">
-        <div>
-          <h2 class="underoverskrift">Kontakt os</h2>
-          <p>E-mail: lillebittemail@gmail.com</p>
-          <p>Den 12. - 18. Oktober 2026</p>
+              <div class="formContent">
+                <p class="tilføjImgTekst">Tilføj billede</p>
+                <label class="inputboks_img">
+                  <img class="downloadImg" src="/pics/Download.png" alt="Tilføj billede" />
+                  <input type="file" hidden />
+                </label>
+              </div>
+
+              <div class="formContent">
+                <p>Titel på instant</p>
+                <input class="inputboks" type="text" />
+              </div>
+
+              <div class="formContentStor">
+                <p>Historien bag dit instant - beskriv billedet og hvordan du tog det i en sætning eller to</p>
+                <input class="inputboks" type="text" />
+              </div>
+            </form>
+
+            <div class="termsContent">
+              <button popovertarget="terms">Læs vilkår og betingelser</button>
+              <label class="checkbox">
+                <input type="checkbox" />
+                <span class="checkmark-tekst">Jeg accepterer betingelserne</span>
+              </label>
+            </div>
+
+            <a href="tak.html">
+              <div><button class="ctaSend">Send</button></div>
+            </a>
+          </div>
+
+          <div><img class="billedeSamling2" src="/pics/billederDesktopDel.png" alt="Billeder i siden" /></div>
         </div>
-        <div>
-          <img class="footerImg" src="pics/FooterImg.png" alt="billede footer">
+        <section popover id="terms" class="terms">
+          <h2>Vilkår og betingelser</h2>
+          <p>Ved at deltage i konkurrencen accepterer du følgende vilkår og betingelser</p>
+
+          <div>
+            <h3>Samtykke</h3>
+            <p>
+              Det er ikke tilladt at uploade fotografier af personer, der ikke har givet samtykke til offentliggørelsen af ​​billedet. Billeder af
+              personer i private eller pinlige situationer, uanset om de er fotograferet på et offentligt sted, er ikke tilladt.
+            </p>
+          </div>
+          <div>
+            <h3>Juridiske aspekter</h3>
+            <p>
+              Arrangørerne forbeholder sig retten til at diskvalificere enhver deltager, der overtræder disse betingelser. Arrangørerne påtager sig
+              intet ansvar for tab, skade eller personskade, der måtte opstå som følge af deltagelse i konkurrencen eller brug af præmier. Deltagerne
+              fritager arrangørerne for ethvert krav, søgsmål eller ansvar i forbindelse med deres deltagelse i konkurrencen.
+            </p>
+          </div>
+          <div>
+            <h3>Antal bidrag</h3>
+            <p>Du kan deltage i konkurrencen med i alt fem bidrag.</p>
+          </div>
+          <div>
+            <h3>Brugsrettigheder</h3>
+            <p>
+              Ved at indsende et eller flere billeder og dermed deltage i konkurrencen accepterer du, at billedet må bruges til promovering af
+              fotokonkurrencen og muligvis i fysiske udstillingslokaler bagefter. Arrangørerne vil kreditere deltagerne, hvor det er praktisk og
+              rimeligt muligt.
+            </p>
+          </div>
+          <div>
+            <h3>Ophavsret</h3>
+            <p>
+              Du skal være fotografen af de indsendte instant fotos samt have rettighederne til at offentliggøre dem. Billederne skal være fri for
+              tredjepartsrettigheder. Som deltager beholder du ophavsretten til de indsendte fotos. Ved at indsende fotos til konkurrencen giver du
+              arrangørerne en ikke-eksklusiv licens til at bruge, reproducere og offentliggøre de indsendte fotos i forbindelse med promoveringen af
+              ​​konkurrencen, herunder på sociale medieplatforme, hjemmesider og i trykte materialer. Arrangørerne vil kreditere deltagerne, hvor det
+              er praktisk og rimeligt.
+            </p>
+          </div>
+          <div>
+            <h3>Annoncering af vinderne</h3>
+            <p>
+              Vinderne af konkurrencen vil blive annonceret på Instant Ugens officielle hjemmeside og/eller sociale medieplatforme. Ved at deltage i
+              konkurrencen giver du samtykke til offentliggørelse af navn samt at indsendte fotos bruges til markedsføring af konkurrencen.
+            </p>
+          </div>
+          <div>
+            <button popovertarget="terms" popovertargetaction="hide">Forstået og luk</button>
+          </div>
+        </section>
+
+        <div class="ImgContainer">
+          <img class="billedeSamling" src="/pics/billedeSamlingForm.png" alt="Billede samling" />
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
+    <footer>
+      <section class="footerContent">
+        <div class="footerSek1">
+          <img class="LogoFooter" src="/pics/INSTANTUGEN.png" alt="logo" />
+          <p class="tagline">En uge fyldt med minder</p>
+          <h2 class="underoverskrift">Et samarbejde med EK</h2>
+        </div>
 
-    <img class="blurFooter" src="pics/blurFooter.png" alt="blur img">
-  </footer>
-</body>
+        <div class="addBorder">
+          <div>
+            <h2 class="underoverskrift">Kontakt os</h2>
+            <p>E-mail: lillebittemail@gmail.com</p>
+            <p>Den 12. - 18. Oktober 2026</p>
+          </div>
+          <div>
+            <img class="footerImg" src="pics/FooterImg.png" alt="billede footer" />
+          </div>
+        </div>
+      </section>
 
+      <img class="blurFooter" src="pics/blurFooter.png" alt="blur img" />
+    </footer>
+  </body>
 </html>
