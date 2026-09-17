@@ -50,14 +50,23 @@ nav li {
 
 .rotate1 {
   transform: rotate(-5deg);
+  &:hover {
+    transform: rotate(2deg);
+  }
 }
 
 .rotate2 {
   transform: rotate(-2deg);
+  &:hover {
+    transform: rotate(3deg);
+  }
 }
 
 .rotate3 {
   transform: rotate(2deg);
+  &:hover {
+    transform: rotate(-3deg);
+  }
 }
 
 .logopadding {
