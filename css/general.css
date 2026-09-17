@@ -140,6 +140,7 @@ li {
   /*  font-size: 48px; */
   font-size: clamp(10px, 1.5vw, 16px);
   text-align: center;
+  color: #000;
 }
 
 .cta {
