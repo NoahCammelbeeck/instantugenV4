@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="dk">
+<html lang="da">
 
 <head>
   <meta charset="UTF-8" />
@@ -13,22 +13,39 @@
 
 <body>
   <header>
-    <!-- <a href="index.html">logo</a>
-    <nav>
-      <ul>
-        <li><a href="">Inspiration</a></li>
-        <li><a href="info.html">Om os</a></li>
-        <li><a href="del.html">Del dine instants</a></li>
-        <li><a href="nominerede.html">Vindere og nominerede</a></li>
-      </ul>
-    </nav> -->
+    <div class="header-desktop">
+      <a class="logo" href="index.html">
+        <p class="logopadding">Instant</p>
+        <p class="logopadding">ugen</p>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="info.html">
+              <div class="navbtn rotate1">
+                <img class="navbtn-img" src="pics/navbtn.jpg" alt="et polaroid med tekst">
+                <p class="navtxt rotate3">Om os</p>
+              </div>
+            </a></li>
+          <li><a href="del.html">
+              <div class="navbtn rotate2">
+                <img class="navbtn-img" src="pics/navbtn.jpg" alt="et polaroid med tekst">
+                <p class="navtxt rotate1">Del dine instants</p>
+              </div>
+            </a></li>
+          <li><a href="nominerede.html">
+              <div class="navbtn rotate3">
+                <img class="navbtn-img" src="pics/navbtn.jpg" alt="et polaroid med tekst">
+                <p class="navtxt rotate2">Deltagere</p>
+              </div>
+            </a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main class="indhold">
+  <main>
     <h1 class="overskrift">Del dine instants</h1>
     <section>
-
-
       <h2 class="underoverskrift">Instant foto</h2>
       <div class="grid-1-2">
         <p class="textboks">Hver indsendelse skal være et analogt instant-foto - ikke en digital montage lavet i et
@@ -52,11 +69,10 @@
     </section>
 
 
-    <div>
-
+    <section>
       <div class="grid-desktop">
-
         <div>
+
 
           <div class="sektion1">
             <h2>Regler for deltagelse</h2>
@@ -95,17 +111,20 @@
               <input class="inputboks" type="text" />
             </div>
 
+          </form>
 
-
+          <div class="termsContent">
+            <button popovertarget="terms">Læs vilkår og betingelser</button>
             <label class="checkbox">
               <input type="checkbox" />
               <span class="checkmark-tekst">Jeg accepterer betingelserne</span>
             </label>
-          </form>
+          </div>
 
-          <button popovertarget="terms">Læs vilkår og betingelser</button>
+          <a href="tak.html">
+            <div><button class="ctaSend">Send</button></div>
+          </a>
 
-          <div><button>Send</button></div>
 
         </div>
 
@@ -183,19 +202,29 @@
       </div>
 
 
-    </div>
+    </section>
   </main>
   <footer>
-    <div>
-      <h3>Kontakt os</h3>
-      <p>E-mail: lillebittemail@gmail.com</p>
-      <!-- logo -->
-    </div>
-    <div>
-      <a href="del.html">Del dine instants</a>
-      <a href="info.html">Om os</a>
-      <a href="nominerede.html">Vindere og nominerede</a>
-    </div>
+    <section class="footerContent">
+      <div class="footerSek1">
+        <img class="LogoFooter" src="/pics/INSTANTUGEN.png" alt="logo">
+        <p class="tagline">En uge fyldt med minder</p>
+        <h2 class="underoverskrift">Et samarbejde med EK</h2>
+      </div>
+
+      <div class="addBorder">
+        <div>
+          <h2 class="underoverskrift">Kontakt os</h2>
+          <p>E-mail: lillebittemail@gmail.com</p>
+          <p>Den 12. - 18. Oktober 2026</p>
+        </div>
+        <div>
+          <img class="footerImg" src="pics/FooterImg.png" alt="billede footer">
+        </div>
+      </div>
+    </section>
+
+    <img class="blurFooter" src="pics/blurFooter.png" alt="blur img">
   </footer>
 </body>
 
